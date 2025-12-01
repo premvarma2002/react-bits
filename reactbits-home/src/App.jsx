@@ -1,7 +1,9 @@
 import React from "react";
 import Hero from "./components/ui/Hero";
-import logo from '../public/logo.svg'
+import logo from "/logo.svg";
 import CardNav from "./components/ui/CardNav";
+import Footer from "./components/Footer";
+import MagicBento from "./components/MagicBento";
 
 const App = () => {
   const items = [
@@ -47,6 +49,22 @@ const App = () => {
         ease="power3.out"
       />
       <Hero />
+      <div className="w-full bg-black">
+        <MagicBento
+          textAutoHide={true}
+          enableStars={true}
+          enableSpotlight={true}
+          enableBorderGlow={true}
+          enableTilt={true}
+          enableMagnetism={true}
+          clickEffect={true}
+          spotlightRadius={300}
+          particleCount={12}
+          glowColor="132, 0, 255"
+        />
+      </div>
+
+      <Footer />
     </>
   );
 };
